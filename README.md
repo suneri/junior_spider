@@ -1,4 +1,4 @@
-# spider-course-4
+# spider course for junior engineers
 Spider course 4 sample, Python 3.6
 
 ## 环境搭建
@@ -34,5 +34,5 @@ Spider course 4 sample, Python 3.6
 ## Ubuntu 18 虚拟机环境
 
     1. 下载安装 Virtubox 
-    2. 下载 虚拟机，下载完成后解压后，双击启动虚拟机。下载链接: https://pan.baidu.com/s/1Rns_T6Pr3prMtXdQJOkgug 密码: kaq8
+    2. 下载 虚拟机，下载完成后解压后，双击启动虚拟机。下载链接: https://pan.baidu.com/s/1qSTZ_rGe7AcJJo7vlVTp1w
     3. 密码为 xxxy
