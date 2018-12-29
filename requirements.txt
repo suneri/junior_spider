@@ -1,0 +1,10 @@
+Pillow
+requests
+urllib3
+bloom-filter
+pymongo
+mysql-connector
+selenium
+lxml
+aiohttp
+cssselect
