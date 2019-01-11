@@ -31,6 +31,11 @@ Spider course 4 sample, Python 3.6
 
     \#pip install -r requirements.txt 
 
+5. 离线安装 Chrome 插件。安装方法：下载插件后，在 chrome 浏览器地址栏输入 chrome://extensions，选择 Load Unpacked 或者 加载，来执行安装。Chrome 浏览器插件的离线下载地址：
+   1. JSONView: https://github.com/gildas-lormeau/JSONView-for-Chrome
+   2. POSTMAN: https://github.com/postmanlabs/postman-app-support/releases
+   3. POSTMAN INTERCEPTER: https://github.com/postmanlabs/postman-chrome-interceptor/releases
+
 ## Ubuntu 18 虚拟机环境
 
     1. 下载安装 Virtubox 
