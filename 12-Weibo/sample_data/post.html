@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="//h5.sinaimg.cn">
+    <link rel="icon" sizes="any" mask href="//h5.sinaimg.cn/upload/2015/05/15/28/WeiboLogoCh.svg" color="black">
+    <link rel="apple-touch-icon" href="https://h5.sinaimg.cn/upload/1005/453/2018/06/15/QQ20180615-0.jpg">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>微博正文 - 微博HTML5版</title>
+    <meta content="随时随地发现新鲜事！微博带你欣赏世界上每一个精彩瞬间，了解每一个幕后故事。分享你想表达的，让全世界都能听到你的心声！" name="description">
+    <meta name="theme-color" content="#F3F3F3">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+        <link rel="stylesheet" href="//h5.sinaimg.cn/marvel/v1.4.0/css/lib/base.css">
+    <link rel="stylesheet" href="//h5.sinaimg.cn/marvel/v1.4.0/css/card/cards.css">
+    <script>!function(e){var a,i=navigator.userAgent.toLowerCase(),n=document.documentElement,t=parseInt(n.clientWidth);if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)||i.indexOf("like mac os x")>0){var s=/os [\d._]*/gi,o=i.match(s);a=(o+"").replace(/[^0-9|_.]/gi,"").replace(/_/gi,".")}var r=a+"";"undefined"!=r&&r.length>0&&(a=parseInt(r),a>=8&&(375==t||667==t||320==t||568==t||480==t)?n.className="iosx2":(a>=8&&414==t||736==t)&&(n.className="iosx3")),/(Android)/i.test(navigator.userAgent)&&(n.className="android")}(window);</script>
+        <style>html, body, #app {height: 100%;}[v-cloak] {display: none;}.wb-item-wrap .card9.card{margin:0}.f-weibo .m-img-box{background-color:#e6e6e6}.empty-bg{width:100%;background-color:#e6e6e6;height:.375rem}.inline-block{display:inline-block}.txt-margin{margin:0 0 1rem 0}.width-min{width:4.375rem}.anim-load{animation:load .5s ease-out;-moz-animation:load .5s ease-out;-webkit-animation:load .5s ease-out;-o-animation:load .5s ease-out}@keyframes load{0%{background-color:#fff}100%{background-color:#e6e6e6}}@-moz-keyframes load{0%{background-color:#fff}100%{background-color:#e6e6e6}}@-webkit-keyframes load{0%{background-color:#fff}100%{background-color:#e6e6e6}}.f-more{letter-spacing:.1rem}.f-weibo .f-card-title{margin:-1rem -1rem .5rem -1rem;padding:0 1rem;border-width:0}.f-weibo .m-avatar-box .m-img-box .m-icon{font-size:14px}.iosx3 .card9 .f-card-title{border-width:0}.iosx2 .card9 .f-card-title{border-width:0}.f-weibo.card9{border-bottom:1px solid #e6e6e6}.iosx3 .f-weibo.card9{border-bottom:.36px solid #e6e6e6}.iosx2 .f-weibo.card9{border-bottom:.5px solid #e6e6e6}.f-weibo.card9>.card-wrap{margin-left:.75rem;margin-right:.75rem}.f-weibo.card9.m-panel{border-top-width:0}.f-weibo.card .card-wrap .f-col-wrap{padding:0 .9375rem}.f-weibo.card9 .m-box-col{min-width:0}.f-weibo.card9 .weibo-top{padding:0 0 0 .25rem}.f-weibo.card9 .weibo-top .m-box-col .m-icon{margin-left:3px}.f-weibo.card9 .weibo-main .weibo-og{padding:.75rem 0 0 .25rem}.f-weibo.card9 .weibo-main .card-wrap ~ .weibo-rp{margin-top:0.5rem}.f-weibo.card9 .weibo-main .media-b{margin:.625rem 0 -.375rem}.f-weibo.card9 .weibo-main .media-b .m-auto-list{margin:0 0 -.25rem}.f-weibo .weibo-top .m-text-box{margin:.15rem 0 .15rem .5rem}.f-weibo .f-r{float:right}.f-weibo .weibo-main .weibo-og{font-size:.9375rem}.f-weibo .weibo-rp .weibo-text{font-size:.9375rem}.f-weibo .weibo-rp .f-footer-ctrl{padding:0.625rem 0 0}.f-weibo .f-bg-img{background-size:cover;background-repeat:no-repeat;background-position:center;position:absolute;width:100%;height:100%}.f-footer-ctrl{border-top-width:0;height:1.1rem;padding: 1rem .375rem 1rem 0;margin: 0 0.75rem}.f-footer-ctrl .m-diy-btn{color:rgba(40,47,60,0.8);height:100%;float:left}.f-footer-ctrl .m-diy-btn+.m-diy-btn{margin-left:1.6875rem}.f-footer-ctrl .m-diy-btn .m-icon{font-size:16px}.f-footer-ctrl aside{float:right;color:rgba(40,47,60,0.8)}.f-footer-ctrl .m-font{font-size:1rem;vertical-align:middle}.f-footer-ctrl .m-diy-btn h4{font-size:.8125rem;display:inline-block;margin-top:0;margin-left:.25rem}</style>
+
+  <link rel="preload" href="https://h5.sinaimg.cn/m/weibo-lite/js/vendor.54374176.js" as="script">
+  <link rel="preload" href="https://h5.sinaimg.cn/m/weibo-lite/js/app.8b8c0639.js" as="script">
+  <link rel="preload" href="https://h5.sinaimg.cn/m/weibo-lite/css/app.0bcefd18.css" as="style">
+  <link rel="preload" href="https://h5.sinaimg.cn/m/weibo-lite/js/manifest.f54c532a.js" as="script">
+  <link rel="manifest" href="/static/pwa/manifest.json">
+<link href="https://h5.sinaimg.cn/m/weibo-lite/css/app.0bcefd18.css" rel="stylesheet"></head>
+<body>
+  <div id="app" class="m-container-max">
+    <router-view>
+      <div class="wb-item-wrap"><div class="wb-item"><div class="card m-panel card9 f-weibo"><div class="card-wrap"><header class="weibo-top m-box"><div class="m-avatar-box"><a href="javascript:;" class="m-img-box anim-load"></a></div><div class="m-box-dir m-box-col"><div class="m-text-box"><h4 class="m-text-cut f-r"></h4><h3 class="m-text-cut empty-bg width-min inline-block anim-load"></h3></div></div></header><article class="weibo-main"><div class="weibo-og"><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p></div></article><footer class="f-footer-ctrl"><div class="m-diy-btn"><i class="m-font m-font-forward"></i><h4>转发</h4></div><div class="m-diy-btn"><i class="m-font m-font-comment"></i><h4>评论</h4></div><div class="m-diy-btn"><i class="m-icon m-icon-like"></i><h4>赞</h4></div><aside><i class="f-more">...</i></aside></footer></div></div></div></div>
+      <div class="wb-item-wrap"><div class="wb-item"><div class="card m-panel card9 f-weibo"><div class="card-wrap"><header class="weibo-top m-box"><div class="m-avatar-box"><a href="javascript:;" class="m-img-box anim-load"></a></div><div class="m-box-dir m-box-col"><div class="m-text-box"><h4 class="m-text-cut f-r"></h4><h3 class="m-text-cut empty-bg width-min inline-block anim-load"></h3></div></div></header><article class="weibo-main"><div class="weibo-og"><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p></div></article><footer class="f-footer-ctrl"><div class="m-diy-btn"><i class="m-font m-font-forward"></i><h4>转发</h4></div><div class="m-diy-btn"><i class="m-font m-font-comment"></i><h4>评论</h4></div><div class="m-diy-btn"><i class="m-icon m-icon-like"></i><h4>赞</h4></div><aside><i class="f-more">...</i></aside></footer></div></div></div></div>
+      <div class="wb-item-wrap"><div class="wb-item"><div class="card m-panel card9 f-weibo"><div class="card-wrap"><header class="weibo-top m-box"><div class="m-avatar-box"><a href="javascript:;" class="m-img-box anim-load"></a></div><div class="m-box-dir m-box-col"><div class="m-text-box"><h4 class="m-text-cut f-r"></h4><h3 class="m-text-cut empty-bg width-min inline-block anim-load"></h3></div></div></header><article class="weibo-main"><div class="weibo-og"><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p></div></article><footer class="f-footer-ctrl"><div class="m-diy-btn"><i class="m-font m-font-forward"></i><h4>转发</h4></div><div class="m-diy-btn"><i class="m-font m-font-comment"></i><h4>评论</h4></div><div class="m-diy-btn"><i class="m-icon m-icon-like"></i><h4>赞</h4></div><aside><i class="f-more">...</i></aside></footer></div></div></div></div>
+      <div class="wb-item-wrap"><div class="wb-item"><div class="card m-panel card9 f-weibo"><div class="card-wrap"><header class="weibo-top m-box"><div class="m-avatar-box"><a href="javascript:;" class="m-img-box anim-load"></a></div><div class="m-box-dir m-box-col"><div class="m-text-box"><h4 class="m-text-cut f-r"></h4><h3 class="m-text-cut empty-bg width-min inline-block anim-load"></h3></div></div></header><article class="weibo-main"><div class="weibo-og"><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p></div></article><footer class="f-footer-ctrl"><div class="m-diy-btn"><i class="m-font m-font-forward"></i><h4>转发</h4></div><div class="m-diy-btn"><i class="m-font m-font-comment"></i><h4>评论</h4></div><div class="m-diy-btn"><i class="m-icon m-icon-like"></i><h4>赞</h4></div><aside><i class="f-more">...</i></aside></footer></div></div></div></div>
+    </router-view>
+      <mv-modal></mv-modal>
+  </div>
+  <script>
+  var config = {
+    env: 'prod',
+    st: '',
+    login: [][0],
+    uid: '',
+    pageConfig: [null][0] || {},
+    preferQuickapp: 0,
+    wm: '',
+    version: 'v2.1.52'
+  };
+  var $render_data = [{
+    "status": {
+        "created_at": "Tue Jan 15 10:00:07 +0800 2019",
+        "id": "4328664940066319",
+        "mid": "4328664940066319",
+        "can_edit": false,
+        "show_additional_indication": 0,
+        "text": "看到你...我有一点点动心<span class=\"url-icon\"><img alt=[嘻嘻] src=\"//h5.sinaimg.cn/m/emoticon/icon/default/d_xixi-ce63ce2629.png\" style=\"width:1em; height:1em;\" /></span><a  href=\"https://m.weibo.cn/search?containerid=231522type%3D1%26t%3D10%26q%3D%23%E6%AC%A7%E8%8E%B1%E9%9B%85%E5%B0%8F%E9%92%A2%E7%AC%94%23&extparam=%23%E6%AC%A7%E8%8E%B1%E9%9B%85%E5%B0%8F%E9%92%A2%E7%AC%94%23\" data-hide=\"\"><span class=\"surl-text\">#欧莱雅小钢笔#</span></a><a  href=\"https://m.weibo.cn/search?containerid=231522type%3D1%26t%3D10%26q%3D%23%E9%9B%BE%E4%B8%8A%E7%98%BE%23&extparam=%23%E9%9B%BE%E4%B8%8A%E7%98%BE%23\" data-hide=\"\"><span class=\"surl-text\">#雾上瘾#</span></a> ",
+        "textLength": 51,
+        "source": "OPPO随光而变R17 Pro",
+        "favorited": false,
+        "pic_ids": [
+            "63885668ly1fz71ecgpzcj22ru3o0qvd"
+        ],
+        "thumbnail_pic": "http://wx3.sinaimg.cn/thumbnail/63885668ly1fz71ecgpzcj22ru3o0qvd.jpg",
+        "bmiddle_pic": "http://wx3.sinaimg.cn/bmiddle/63885668ly1fz71ecgpzcj22ru3o0qvd.jpg",
+        "original_pic": "http://wx3.sinaimg.cn/large/63885668ly1fz71ecgpzcj22ru3o0qvd.jpg",
+        "is_paid": false,
+        "mblog_vip_type": 0,
+        "user": {
+            "id": 1669879400,
+            "screen_name": "Dear-迪丽热巴",
+            "profile_image_url": "https://tvax1.sinaimg.cn/crop.0.0.996.996.180/63885668ly8fjf57kfmgfj20ro0ro0u7.jpg",
+            "profile_url": "https://m.weibo.cn/u/1669879400?uid=1669879400",
+            "statuses_count": 936,
+            "verified": true,
+            "verified_type": 0,
+            "verified_type_ext": 1,
+            "verified_reason": "嘉行传媒签约演员　",
+            "close_blue_v": false,
+            "description": "一只喜欢默默表演的小透明。工作联系helloworkwork@126.com🍒",
+            "gender": "f",
+            "mbtype": 12,
+            "urank": 41,
+            "mbrank": 7,
+            "follow_me": false,
+            "following": false,
+            "followers_count": 60709334,
+            "follow_count": 219,
+            "cover_image_phone": "https://tva2.sinaimg.cn/crop.0.0.640.640.640/a1d3feabjw1ecasunmkncj20hs0hsq4j.jpg",
+            "avatar_hd": "https://wx1.sinaimg.cn/orj480/63885668ly8fjf57kfmgfj20ro0ro0u7.jpg",
+            "like": false,
+            "like_me": false,
+            "badge": {
+                "zongyiji": 1,
+                "follow_whitelist_video": 1,
+                "user_name_certificate": 1,
+                "wenchuan_10th": 1,
+                "national_day_2018": 1,
+                "wbzy_2018": 1,
+                "memorial_2018": 1
+            }
+        },
+        "picStatus": "0:1",
+        "reposts_count": 641735,
+        "comments_count": 482465,
+        "attitudes_count": 167748,
+        "pending_approval_count": 0,
+        "isLongText": false,
+        "reward_exhibition_type": 0,
+        "hide_flag": 0,
+        "visible": {
+            "type": 0,
+            "list_id": 0
+        },
+        "expire_time": 1547606973,
+        "darwin_tags": [
+            {
+                "object_type": "fangle",
+                "object_id": "1022:23126100007547733803538433",
+                "display_name": "迪丽热巴最新动态追踪",
+                "enterprise_uid": null,
+                "bd_object_type": "fangle"
+            }
+        ],
+        "mblogtype": 0,
+        "more_info_type": 0,
+        "cardid": "star_212",
+        "content_auth": 0,
+        "hide_hot_flow": 1,
+        "page_info": {
+            "type": "search_topic",
+            "object_type": 0,
+            "page_pic": {
+                "url": "https://wx4.sinaimg.cn/large/67436eebly1fycamy7k4kj205q05qaah.jpg"
+            },
+            "page_url": "https://m.weibo.cn/search?containerid=231522type%3D1%26t%3D10%26q%3D%23%E6%AC%A7%E8%8E%B1%E9%9B%85%E5%B0%8F%E9%92%A2%E7%AC%94%23&extparam=%23%E6%AC%A7%E8%8E%B1%E9%9B%85%E5%B0%8F%E9%92%A2%E7%AC%94%23",
+            "page_title": "#欧莱雅小钢笔#",
+            "content1": "249万讨论 2.2亿阅读 "
+        },
+        "pics": [
+            {
+                "pid": "63885668ly1fz71ecgpzcj22ru3o0qvd",
+                "url": "https://wx3.sinaimg.cn/orj360/63885668ly1fz71ecgpzcj22ru3o0qvd.jpg",
+                "size": "orj360",
+                "geo": {
+                    "width": 360,
+                    "height": 475,
+                    "croped": false
+                },
+                "large": {
+                    "size": "large",
+                    "url": "https://wx3.sinaimg.cn/large/63885668ly1fz71ecgpzcj22ru3o0qvd.jpg",
+                    "geo": {
+                        "width": 2048,
+                        "height": 2707,
+                        "croped": false
+                    }
+                }
+            }
+        ],
+        "tag_info": {
+            "type": "webpage",
+            "icon": "https://h5.sinaimg.cn/upload/2017/04/06/253/timeline_card_small_fresh-news_default.png",
+            "page_pic": {
+                "url": "http://wx2.sinaimg.cn/crop.0.487.2241.1260/90eb2137ly1fpzrtlbg03j21vs1cktnx.jpg"
+            },
+            "page_url": "https://m.weibo.cn/c/novelty/detail?card_id=7547733803538433",
+            "page_title": "【新鲜事】迪丽热巴最新动态追踪",
+            "content1": "11小时前 更新",
+            "buttons": [
+                {
+                    "type": "link",
+                    "name": "打开鲜知",
+                    "color": "#FF8200",
+                    "pic": "https://tvax1.sinaimg.cn/crop.0.0.144.144.180/0078Pqmnly8ftnb3iqnr0j3040040t8m.jpg",
+                    "scheme": "https://novelty.h5.weibo.cn/others/openXz?cardid=7547733803538433&isAutoOpen=1"
+                }
+            ]
+        },
+        "bid": "Hc1HM0hfF",
+        "buttons": [
+            {
+                "type": "follow",
+                "name": "关注",
+                "sub_type": 0,
+                "params": {
+                    "uid": 1669879400
+                }
+            }
+        ],
+        "status_title": "欧莱雅小钢笔",
+        "ok": 1,
+        "scheme": "https://weibo.cn/appurl?scheme=sinaweibo%3A%2F%2Fdetail%3Fmblogid%3D4328664940066319%26luicode%3D20000061%26lfid%3D4328664940066319&luicode=20000061&lfid=4328664940066319",
+        "tipScheme": "https://weibo.cn/appurl?scheme=sinaweibo%3A%2F%2Fdetail%3Fmblogid%3D4328664940066319%26luicode%3D20000061%26lfid%3D4328664940066319&luicode=20000061&lfid=4328664940066319"
+    },
+    "hotScheme": "https://m.weibo.cn/p/index?containerid=102803&luicode=20000061&lfid=4328664940066319",
+    "appScheme": "https://m.weibo.cn?luicode=20000061&lfid=4328664940066319",
+    "callUinversalLink": false,
+    "callWeibo": false,
+    "hit": true,
+    "is_gray": 1,
+    "schemeOrigin": false,
+    "appLink": "sinaweibo://detail?mblogid=4328664940066319&luicode=20000061&lfid=4328664940066319",
+    "xianzhi_scheme": "xianzhi://mblogshow?mid=4328664940066319"
+}][0] || {};
+  var __wb_performance_data={v:"v8",m:"mainsite",pwa:1,sw:0};
+  </script>
+  <script src="/static/pwa/sw-registration.js"></script>
+  <script src="https://h5.sinaimg.cn/upload/1005/16/2017/11/30/wbp.js" id="__wb_performance_log" data-rate="0.1"></script>
+<script type="text/javascript" src="https://h5.sinaimg.cn/m/weibo-lite/js/manifest.f54c532a.js"></script><script type="text/javascript" src="https://h5.sinaimg.cn/m/weibo-lite/js/vendor.54374176.js"></script><script type="text/javascript" src="https://h5.sinaimg.cn/m/weibo-lite/js/app.8b8c0639.js"></script></body>
+</html>

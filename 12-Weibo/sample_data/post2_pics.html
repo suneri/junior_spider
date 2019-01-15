@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="//h5.sinaimg.cn">
+    <link rel="icon" sizes="any" mask href="//h5.sinaimg.cn/upload/2015/05/15/28/WeiboLogoCh.svg" color="black">
+    <link rel="apple-touch-icon" href="https://h5.sinaimg.cn/upload/1005/453/2018/06/15/QQ20180615-0.jpg">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>微博正文 - 微博HTML5版</title>
+    <meta content="随时随地发现新鲜事！微博带你欣赏世界上每一个精彩瞬间，了解每一个幕后故事。分享你想表达的，让全世界都能听到你的心声！" name="description">
+    <meta name="theme-color" content="#F3F3F3">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+        <link rel="stylesheet" href="//h5.sinaimg.cn/marvel/v1.4.0/css/lib/base.css">
+    <link rel="stylesheet" href="//h5.sinaimg.cn/marvel/v1.4.0/css/card/cards.css">
+    <script>!function(e){var a,i=navigator.userAgent.toLowerCase(),n=document.documentElement,t=parseInt(n.clientWidth);if(/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)||i.indexOf("like mac os x")>0){var s=/os [\d._]*/gi,o=i.match(s);a=(o+"").replace(/[^0-9|_.]/gi,"").replace(/_/gi,".")}var r=a+"";"undefined"!=r&&r.length>0&&(a=parseInt(r),a>=8&&(375==t||667==t||320==t||568==t||480==t)?n.className="iosx2":(a>=8&&414==t||736==t)&&(n.className="iosx3")),/(Android)/i.test(navigator.userAgent)&&(n.className="android")}(window);</script>
+        <style>html, body, #app {height: 100%;}[v-cloak] {display: none;}.wb-item-wrap .card9.card{margin:0}.f-weibo .m-img-box{background-color:#e6e6e6}.empty-bg{width:100%;background-color:#e6e6e6;height:.375rem}.inline-block{display:inline-block}.txt-margin{margin:0 0 1rem 0}.width-min{width:4.375rem}.anim-load{animation:load .5s ease-out;-moz-animation:load .5s ease-out;-webkit-animation:load .5s ease-out;-o-animation:load .5s ease-out}@keyframes load{0%{background-color:#fff}100%{background-color:#e6e6e6}}@-moz-keyframes load{0%{background-color:#fff}100%{background-color:#e6e6e6}}@-webkit-keyframes load{0%{background-color:#fff}100%{background-color:#e6e6e6}}.f-more{letter-spacing:.1rem}.f-weibo .f-card-title{margin:-1rem -1rem .5rem -1rem;padding:0 1rem;border-width:0}.f-weibo .m-avatar-box .m-img-box .m-icon{font-size:14px}.iosx3 .card9 .f-card-title{border-width:0}.iosx2 .card9 .f-card-title{border-width:0}.f-weibo.card9{border-bottom:1px solid #e6e6e6}.iosx3 .f-weibo.card9{border-bottom:.36px solid #e6e6e6}.iosx2 .f-weibo.card9{border-bottom:.5px solid #e6e6e6}.f-weibo.card9>.card-wrap{margin-left:.75rem;margin-right:.75rem}.f-weibo.card9.m-panel{border-top-width:0}.f-weibo.card .card-wrap .f-col-wrap{padding:0 .9375rem}.f-weibo.card9 .m-box-col{min-width:0}.f-weibo.card9 .weibo-top{padding:0 0 0 .25rem}.f-weibo.card9 .weibo-top .m-box-col .m-icon{margin-left:3px}.f-weibo.card9 .weibo-main .weibo-og{padding:.75rem 0 0 .25rem}.f-weibo.card9 .weibo-main .card-wrap ~ .weibo-rp{margin-top:0.5rem}.f-weibo.card9 .weibo-main .media-b{margin:.625rem 0 -.375rem}.f-weibo.card9 .weibo-main .media-b .m-auto-list{margin:0 0 -.25rem}.f-weibo .weibo-top .m-text-box{margin:.15rem 0 .15rem .5rem}.f-weibo .f-r{float:right}.f-weibo .weibo-main .weibo-og{font-size:.9375rem}.f-weibo .weibo-rp .weibo-text{font-size:.9375rem}.f-weibo .weibo-rp .f-footer-ctrl{padding:0.625rem 0 0}.f-weibo .f-bg-img{background-size:cover;background-repeat:no-repeat;background-position:center;position:absolute;width:100%;height:100%}.f-footer-ctrl{border-top-width:0;height:1.1rem;padding: 1rem .375rem 1rem 0;margin: 0 0.75rem}.f-footer-ctrl .m-diy-btn{color:rgba(40,47,60,0.8);height:100%;float:left}.f-footer-ctrl .m-diy-btn+.m-diy-btn{margin-left:1.6875rem}.f-footer-ctrl .m-diy-btn .m-icon{font-size:16px}.f-footer-ctrl aside{float:right;color:rgba(40,47,60,0.8)}.f-footer-ctrl .m-font{font-size:1rem;vertical-align:middle}.f-footer-ctrl .m-diy-btn h4{font-size:.8125rem;display:inline-block;margin-top:0;margin-left:.25rem}</style>
+
+  <link rel="preload" href="https://h5.sinaimg.cn/m/weibo-lite/js/vendor.54374176.js" as="script">
+  <link rel="preload" href="https://h5.sinaimg.cn/m/weibo-lite/js/app.8b8c0639.js" as="script">
+  <link rel="preload" href="https://h5.sinaimg.cn/m/weibo-lite/css/app.0bcefd18.css" as="style">
+  <link rel="preload" href="https://h5.sinaimg.cn/m/weibo-lite/js/manifest.f54c532a.js" as="script">
+  <link rel="manifest" href="/static/pwa/manifest.json">
+<link href="https://h5.sinaimg.cn/m/weibo-lite/css/app.0bcefd18.css" rel="stylesheet"></head>
+<body>
+  <div id="app" class="m-container-max">
+    <router-view>
+      <div class="wb-item-wrap"><div class="wb-item"><div class="card m-panel card9 f-weibo"><div class="card-wrap"><header class="weibo-top m-box"><div class="m-avatar-box"><a href="javascript:;" class="m-img-box anim-load"></a></div><div class="m-box-dir m-box-col"><div class="m-text-box"><h4 class="m-text-cut f-r"></h4><h3 class="m-text-cut empty-bg width-min inline-block anim-load"></h3></div></div></header><article class="weibo-main"><div class="weibo-og"><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p></div></article><footer class="f-footer-ctrl"><div class="m-diy-btn"><i class="m-font m-font-forward"></i><h4>转发</h4></div><div class="m-diy-btn"><i class="m-font m-font-comment"></i><h4>评论</h4></div><div class="m-diy-btn"><i class="m-icon m-icon-like"></i><h4>赞</h4></div><aside><i class="f-more">...</i></aside></footer></div></div></div></div>
+      <div class="wb-item-wrap"><div class="wb-item"><div class="card m-panel card9 f-weibo"><div class="card-wrap"><header class="weibo-top m-box"><div class="m-avatar-box"><a href="javascript:;" class="m-img-box anim-load"></a></div><div class="m-box-dir m-box-col"><div class="m-text-box"><h4 class="m-text-cut f-r"></h4><h3 class="m-text-cut empty-bg width-min inline-block anim-load"></h3></div></div></header><article class="weibo-main"><div class="weibo-og"><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p></div></article><footer class="f-footer-ctrl"><div class="m-diy-btn"><i class="m-font m-font-forward"></i><h4>转发</h4></div><div class="m-diy-btn"><i class="m-font m-font-comment"></i><h4>评论</h4></div><div class="m-diy-btn"><i class="m-icon m-icon-like"></i><h4>赞</h4></div><aside><i class="f-more">...</i></aside></footer></div></div></div></div>
+      <div class="wb-item-wrap"><div class="wb-item"><div class="card m-panel card9 f-weibo"><div class="card-wrap"><header class="weibo-top m-box"><div class="m-avatar-box"><a href="javascript:;" class="m-img-box anim-load"></a></div><div class="m-box-dir m-box-col"><div class="m-text-box"><h4 class="m-text-cut f-r"></h4><h3 class="m-text-cut empty-bg width-min inline-block anim-load"></h3></div></div></header><article class="weibo-main"><div class="weibo-og"><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p></div></article><footer class="f-footer-ctrl"><div class="m-diy-btn"><i class="m-font m-font-forward"></i><h4>转发</h4></div><div class="m-diy-btn"><i class="m-font m-font-comment"></i><h4>评论</h4></div><div class="m-diy-btn"><i class="m-icon m-icon-like"></i><h4>赞</h4></div><aside><i class="f-more">...</i></aside></footer></div></div></div></div>
+      <div class="wb-item-wrap"><div class="wb-item"><div class="card m-panel card9 f-weibo"><div class="card-wrap"><header class="weibo-top m-box"><div class="m-avatar-box"><a href="javascript:;" class="m-img-box anim-load"></a></div><div class="m-box-dir m-box-col"><div class="m-text-box"><h4 class="m-text-cut f-r"></h4><h3 class="m-text-cut empty-bg width-min inline-block anim-load"></h3></div></div></header><article class="weibo-main"><div class="weibo-og"><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p><p class="empty-bg txt-margin anim-load"></p></div></article><footer class="f-footer-ctrl"><div class="m-diy-btn"><i class="m-font m-font-forward"></i><h4>转发</h4></div><div class="m-diy-btn"><i class="m-font m-font-comment"></i><h4>评论</h4></div><div class="m-diy-btn"><i class="m-icon m-icon-like"></i><h4>赞</h4></div><aside><i class="f-more">...</i></aside></footer></div></div></div></div>
+    </router-view>
+      <mv-modal></mv-modal>
+  </div>
+  <script>
+  var config = {
+    env: 'prod',
+    st: '30ed5a',
+    login: [1][0],
+    uid: '6178755894',
+    pageConfig: [null][0] || {},
+    preferQuickapp: 0,
+    wm: '',
+    version: 'v2.1.52'
+  };
+  var $render_data = [{
+    "status": {
+        "created_at": "Tue Jan 15 23:55:57 +0800 2019",
+        "id": "4328875284261864",
+        "mid": "4328875284261864",
+        "edit_count": 1,
+        "can_edit": false,
+        "edit_at": "Tue Jan 15 23:56:53 +0800 2019",
+        "show_additional_indication": 0,
+        "text": "<a  href=\"https://m.weibo.cn/search?containerid=231522type%3D1%26t%3D10%26q%3D%23%E6%98%8E%E6%98%9F%E5%8A%BF%E5%8A%9B%E6%A6%9C%23&isnewpage=1\" data-hide=\"\"><span class=\"surl-text\">#明星势力榜#</span></a> 本周内地榜前三恭喜<a href='/n/蔡徐坤'>@蔡徐坤</a> <a href='/n/朱一龙'>@朱一龙</a> <a href='/n/TFBOYS-王俊凯'>@TFBOYS-王俊凯</a> ~~蔡徐坤、朱一龙、 TFBOYS-王源、邓伦、沈月、白宇、火箭少女101_孟美岐、杨紫、罗云熙Leo、许晴 、TFBOYS-易烊千玺、火箭少女101_杨超越、小鬼-王琳凯、TFBOYS-王俊凯、MD_摩登兄弟<a data-url=\"http://t.cn/Eq8WYPY\" href=\"https://vote.weibo.com/poll/138899812\" data-hide=\"\"><span class='url-icon'><img style='width: 1rem;height: 1rem' src='https://h5.sinaimg.cn/upload/2015/09/25/3/timeline_card_small_web_default.png'></span><span class=\"surl-text\">明星势力榜本周内地榜，你为谁打过榜</span></a> ",
+        "textLength": 251,
+        "source": "微博 weibo.com",
+        "favorited": false,
+        "pic_ids": [
+            "593793e5gy1fz7pjv0t03j20im0rx410",
+            "593793e5gy1fz7pjuwxv3j20j60j7wfy",
+            "593793e5gy1fz7pjuueoaj20j60biaac",
+            "593793e5gy1fz7pjuw6zfj20j60q1t9e",
+            "593793e5gy1fz7pjuwsupj20j60cs3zm",
+            "593793e5gy1fz7pjuvnf0j20c80icgma",
+            "593793e5gy1fz7pjux6r3j20j60srmy5",
+            "593793e5gy1fz7pk7590yj20j60srjsf",
+            "593793e5gy1fz7pk76kugj20c80fhjt4"
+        ],
+        "thumbnail_pic": "http://wx2.sinaimg.cn/thumbnail/593793e5gy1fz7pjv0t03j20im0rx410.jpg",
+        "bmiddle_pic": "http://wx2.sinaimg.cn/bmiddle/593793e5gy1fz7pjv0t03j20im0rx410.jpg",
+        "original_pic": "http://wx2.sinaimg.cn/large/593793e5gy1fz7pjv0t03j20im0rx410.jpg",
+        "is_paid": false,
+        "mblog_vip_type": 0,
+        "user": {
+            "id": 1496814565,
+            "screen_name": "华西都市报",
+            "profile_image_url": "https://tva4.sinaimg.cn/crop.0.0.179.179.180/593793e5jw8ev7olqo5nzj204z04zaae.jpg",
+            "profile_url": "https://m.weibo.cn/u/1496814565?uid=1496814565",
+            "statuses_count": 119411,
+            "verified": true,
+            "verified_type": 3,
+            "verified_type_ext": 0,
+            "verified_reason": "华西都市报官方微博 微博区域新媒体（四川）站",
+            "close_blue_v": false,
+            "description": "欢迎关注华西都市报",
+            "gender": "f",
+            "mbtype": 12,
+            "urank": 48,
+            "mbrank": 6,
+            "follow_me": false,
+            "following": true,
+            "followers_count": 14825951,
+            "follow_count": 8200,
+            "cover_image_phone": "https://tva1.sinaimg.cn/crop.0.0.640.640.640/549d0121tw1egm1kjly3jj20hs0hsq4f.jpg",
+            "avatar_hd": "https://ww4.sinaimg.cn/orj480/593793e5jw8ev7olqo5nzj204z04zaae.jpg",
+            "like": false,
+            "like_me": false,
+            "badge": {
+                "enterprise": 1,
+                "anniversary": 1,
+                "bind_taobao": 1,
+                "dailv": 1,
+                "zongyiji": 1,
+                "self_media": 1,
+                "dzwbqlx_2016": 1,
+                "follow_whitelist_video": 1,
+                "user_name_certificate": 1,
+                "suishoupai_2018": 1,
+                "wenchuan_10th": 1,
+                "qixi_2018": 1,
+                "lol_s8": 1,
+                "national_day_2018": 1,
+                "double11_2018": 1,
+                "wbzy_2018": 1,
+                "memorial_2018": 1
+            }
+        },
+        "reposts_count": 381,
+        "comments_count": 384,
+        "attitudes_count": 29,
+        "pending_approval_count": 0,
+        "isLongText": false,
+        "reward_exhibition_type": 0,
+        "hide_flag": 0,
+        "visible": {
+            "type": 0,
+            "list_id": 0
+        },
+        "darwin_tags": [],
+        "mblogtype": 0,
+        "more_info_type": 0,
+        "cardid": "star_583",
+        "content_auth": 0,
+        "page_info": {
+            "object_type": 2,
+            "type": "vote",
+            "page_pic": {
+                "height": 100,
+                "width": 100,
+                "url": "https://wx4.sinaimg.cn/thumb300/593793e5ly9fz7pfcyddnj2050050t8s.jpg"
+            },
+            "page_url": "https://vote.weibo.com/poll/138899812?",
+            "page_title": "明星势力榜本周内地榜，你为谁打过榜",
+            "content1": "参与人数：464"
+        },
+        "pics": [
+            {
+                "pid": "593793e5gy1fz7pjv0t03j20im0rx410",
+                "url": "https://wx2.sinaimg.cn/orj360/593793e5gy1fz7pjv0t03j20im0rx410.jpg",
+                "size": "orj360",
+                "geo": {
+                    "width": 360,
+                    "height": 540,
+                    "croped": false
+                },
+                "large": {
+                    "size": "large",
+                    "url": "https://wx2.sinaimg.cn/large/593793e5gy1fz7pjv0t03j20im0rx410.jpg",
+                    "geo": {
+                        "width": "670",
+                        "height": "1005",
+                        "croped": false
+                    }
+                }
+            },
+            {
+                "pid": "593793e5gy1fz7pjuwxv3j20j60j7wfy",
+                "url": "https://wx4.sinaimg.cn/orj360/593793e5gy1fz7pjuwxv3j20j60j7wfy.jpg",
+                "size": "orj360",
+                "geo": {
+                    "width": 360,
+                    "height": 360,
+                    "croped": false
+                },
+                "large": {
+                    "size": "large",
+                    "url": "https://wx4.sinaimg.cn/large/593793e5gy1fz7pjuwxv3j20j60j7wfy.jpg",
+                    "geo": {
+                        "width": "690",
+                        "height": "691",
+                        "croped": false
+                    }
+                }
+            },
+            {
+                "pid": "593793e5gy1fz7pjuueoaj20j60biaac",
+                "url": "https://wx4.sinaimg.cn/orj360/593793e5gy1fz7pjuueoaj20j60biaac.jpg",
+                "size": "orj360",
+                "geo": {
+                    "width": 450,
+                    "height": 270,
+                    "croped": false
+                },
+                "large": {
+                    "size": "large",
+                    "url": "https://wx4.sinaimg.cn/large/593793e5gy1fz7pjuueoaj20j60biaac.jpg",
+                    "geo": {
+                        "width": "690",
+                        "height": "414",
+                        "croped": false
+                    }
+                }
+            },
+            {
+                "pid": "593793e5gy1fz7pjuw6zfj20j60q1t9e",
+                "url": "https://wx4.sinaimg.cn/orj360/593793e5gy1fz7pjuw6zfj20j60q1t9e.jpg",
+                "size": "orj360",
+                "geo": {
+                    "width": 360,
+                    "height": 488,
+                    "croped": false
+                },
+                "large": {
+                    "size": "large",
+                    "url": "https://wx4.sinaimg.cn/large/593793e5gy1fz7pjuw6zfj20j60q1t9e.jpg",
+                    "geo": {
+                        "width": "690",
+                        "height": "937",
+                        "croped": false
+                    }
+                }
+            },
+            {
+                "pid": "593793e5gy1fz7pjuwsupj20j60cs3zm",
+                "url": "https://wx4.sinaimg.cn/orj360/593793e5gy1fz7pjuwsupj20j60cs3zm.jpg",
+                "size": "orj360",
+                "geo": {
+                    "width": 405,
+                    "height": 270,
+                    "croped": false
+                },
+                "large": {
+                    "size": "large",
+                    "url": "https://wx4.sinaimg.cn/large/593793e5gy1fz7pjuwsupj20j60cs3zm.jpg",
+                    "geo": {
+                        "width": "690",
+                        "height": "460",
+                        "croped": false
+                    }
+                }
+            },
+            {
+                "pid": "593793e5gy1fz7pjuvnf0j20c80icgma",
+                "url": "https://wx2.sinaimg.cn/orj360/593793e5gy1fz7pjuvnf0j20c80icgma.jpg",
+                "size": "orj360",
+                "geo": {
+                    "width": 360,
+                    "height": 540,
+                    "croped": false
+                },
+                "large": {
+                    "size": "large",
+                    "url": "https://wx2.sinaimg.cn/large/593793e5gy1fz7pjuvnf0j20c80icgma.jpg",
+                    "geo": {
+                        "width": "440",
+                        "height": "660",
+                        "croped": false
+                    }
+                }
+            },
+            {
+                "pid": "593793e5gy1fz7pjux6r3j20j60srmy5",
+                "url": "https://wx3.sinaimg.cn/orj360/593793e5gy1fz7pjux6r3j20j60srmy5.jpg",
+                "size": "orj360",
+                "geo": {
+                    "width": 360,
+                    "height": 540,
+                    "croped": false
+                },
+                "large": {
+                    "size": "large",
+                    "url": "https://wx3.sinaimg.cn/large/593793e5gy1fz7pjux6r3j20j60srmy5.jpg",
+                    "geo": {
+                        "width": "690",
+                        "height": "1035",
+                        "croped": false
+                    }
+                }
+            },
+            {
+                "pid": "593793e5gy1fz7pk7590yj20j60srjsf",
+                "url": "https://wx4.sinaimg.cn/orj360/593793e5gy1fz7pk7590yj20j60srjsf.jpg",
+                "size": "orj360",
+                "geo": {
+                    "width": 360,
+                    "height": 540,
+                    "croped": false
+                },
+                "large": {
+                    "size": "large",
+                    "url": "https://wx4.sinaimg.cn/large/593793e5gy1fz7pk7590yj20j60srjsf.jpg",
+                    "geo": {
+                        "width": "690",
+                        "height": "1035",
+                        "croped": false
+                    }
+                }
+            },
+            {
+                "pid": "593793e5gy1fz7pk76kugj20c80fhjt4",
+                "url": "https://wx1.sinaimg.cn/orj360/593793e5gy1fz7pk76kugj20c80fhjt4.jpg",
+                "size": "orj360",
+                "geo": {
+                    "width": 360,
+                    "height": 455,
+                    "croped": false
+                },
+                "large": {
+                    "size": "large",
+                    "url": "https://wx1.sinaimg.cn/large/593793e5gy1fz7pk76kugj20c80fhjt4.jpg",
+                    "geo": {
+                        "width": "440",
+                        "height": "557",
+                        "croped": false
+                    }
+                }
+            }
+        ],
+        "bid": "Hc7b2hSHK",
+        "status_title": "#明星势力榜# 本周内地榜前三恭喜@蔡徐坤...",
+        "ok": 1,
+        "scheme": "https://weibo.cn/appurl?scheme=sinaweibo%3A%2F%2Fdetail%3Fmblogid%3D4328875284261864%26luicode%3D20000061%26lfid%3D4328875284261864&luicode=20000061&lfid=4328875284261864",
+        "tipScheme": "https://weibo.cn/appurl?scheme=sinaweibo%3A%2F%2Fdetail%3Fmblogid%3D4328875284261864%26luicode%3D20000061%26lfid%3D4328875284261864&luicode=20000061&lfid=4328875284261864"
+    },
+    "hotScheme": "https://m.weibo.cn/p/index?containerid=102803&luicode=20000061&lfid=4328875284261864",
+    "appScheme": "https://m.weibo.cn?luicode=20000061&lfid=4328875284261864",
+    "callUinversalLink": false,
+    "callWeibo": false,
+    "hit": true,
+    "is_gray": 1,
+    "schemeOrigin": false,
+    "appLink": "sinaweibo://detail?mblogid=4328875284261864&luicode=20000061&lfid=4328875284261864",
+    "xianzhi_scheme": "xianzhi://mblogshow?mid=4328875284261864"
+}][0] || {};
+  var __wb_performance_data={v:"v8",m:"mainsite",pwa:1,sw:0};
+  </script>
+  <script src="/static/pwa/sw-registration.js"></script>
+  <script src="https://h5.sinaimg.cn/upload/1005/16/2017/11/30/wbp.js" id="__wb_performance_log" data-rate="0.1"></script>
+<script type="text/javascript" src="https://h5.sinaimg.cn/m/weibo-lite/js/manifest.f54c532a.js"></script><script type="text/javascript" src="https://h5.sinaimg.cn/m/weibo-lite/js/vendor.54374176.js"></script><script type="text/javascript" src="https://h5.sinaimg.cn/m/weibo-lite/js/app.8b8c0639.js"></script></body>
+</html>
