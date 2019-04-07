@@ -51,16 +51,16 @@ def post_crawl_task(topic):
 
 def wait_tasks_done(pool):
     for t in pool:
-        if not t.alive():
+        if not t.isAlive():
             pool.remove(t)
         else:
             t.join()
 
 if __name__ == "__main__":
     tick_start = time.time()
-    while True:
-        pool = []
+    pool = []
 
+    while True:
         # Get a topic to grab its content
         topic = mysql_mgr.dequeue_topic()
 
