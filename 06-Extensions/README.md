@@ -1,15 +1,15 @@
-##POSTMAN
-    https://github.com/postmanlabs/postman-app-support/releases
+## POSTMAN
+https://github.com/postmanlabs/postman-app-support/releases
 
 ## POSTMAN Intercepter
-    https://github.com/postmanlabs/postman-chrome-interceptor/releases
+https://github.com/postmanlabs/postman-chrome-interceptor/releases
 
 ## Chrome Extension Offline Installer
-    https://chrome-extension-downloader.com/
+https://chrome-extension-downloader.com/
 
->JSONView ID: chklaanhfefbnpoihckbnefhakgolnmc
+JSONView ID: chklaanhfefbnpoihckbnefhakgolnmc
 
->POSTMAN Intercepter: aicmkgpgakddgnaphhhpliifpcfhicfo
+POSTMAN Intercepter: aicmkgpgakddgnaphhhpliifpcfhicfo
 
 ## 离线安装方法
     1. Google Chrome 的浏览器里输入 chrome://extensions
