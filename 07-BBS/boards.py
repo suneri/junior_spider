@@ -14,7 +14,7 @@ class BoardsCrawler:
 
     def get_board_of_section(self, section_idx):
         url = self.base_url.format(section_idx)
-        response = requests.get(url, headers = global_var.newsmth_headers)
+        response = requests.get(url, headers = global_var.headers)
         time.sleep(self.interval)
         self.content = response.text
         self.tree = etree.HTML(self.content)
@@ -34,7 +34,7 @@ class BoardsCrawler:
 
             if len(columns[1].xpath('a')) == 0:
                 url = self.domain + board['board_url']
-                response = requests.get(url, headers = global_var.newsmth_headers)
+                response = requests.get(url, headers = global_var.headers)
                 child_board_etree = etree.HTML(response.text)
                 boards.append(self.get_board_list(child_board_etree))
                 continue
@@ -54,4 +54,4 @@ if __name__ == '__main__':
         bc.get_board_of_section(i)
         boards += bc.get_board_list()
         print(boards)
-        break
+        print("======================= {} ========================".format(i))
