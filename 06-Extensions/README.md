@@ -1,12 +1,13 @@
-## JSONView
-    https://github.com/gildas-lormeau/JSONView-for-Chrome
-
 ##POSTMAN
     https://github.com/postmanlabs/postman-app-support/releases
 
 ## POSTMAN Intercepter
     https://github.com/postmanlabs/postman-chrome-interceptor/releases
 
+## Chrome Extension Offline Installer
+    https://chrome-extension-downloader.com/
+>JSONView ID: chklaanhfefbnpoihckbnefhakgolnmc
+>POSTMAN Intercepter: aicmkgpgakddgnaphhhpliifpcfhicfo
 
 ## 离线安装方法
     1. Google Chrome 的浏览器里输入 chrome://extensions
