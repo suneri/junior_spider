@@ -27,6 +27,7 @@ class BoardsCrawler:
         for element in elements:
             board = {}
             columns = element.xpath('td')
+            # print(etree.tostring(columns[0]))
             if len(columns) == 1:
                 break
             board['board_url'] = columns[0].xpath('a')[0].attrib['href']
@@ -50,8 +51,9 @@ class BoardsCrawler:
 if __name__ == '__main__':
     boards = []
     bc = BoardsCrawler()
-    for i in range(0,10):
+    for i in range(1,10):
         bc.get_board_of_section(i)
         boards += bc.get_board_list()
         print(boards)
         print("======================= {} ========================".format(i))
+        break

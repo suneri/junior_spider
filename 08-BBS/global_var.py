@@ -11,4 +11,4 @@ headers = {
     'cache-control': "no-cache"
 }
 
-crawl_interval = 2.5
+crawl_interval = 8
