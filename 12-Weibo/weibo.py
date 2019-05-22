@@ -63,15 +63,15 @@ class WeiboCrawler():
             cookie += k + '=' + v + ';'
         cookie = cookie[:-1]
 
-        with open(self.cookie_filename, 'w') as f:
+        with open(self.cookie_filename, 'w', encoding='utf8') as f:
             f.write(cookie)
         
-        login_headers['cookie'] = cookie
+        self.login_headers['cookie'] = cookie
     
     def login(self):
         # Check whether cookie is existed and valid
         if self.cookie_exist() and self.cookie_valid():
-            cookie = self.load_cookie()
+            self.load_cookie()
             return
 
         # Call login API, login and save cookie
